@@ -1,0 +1,7 @@
+---
+- name: Generate application key
+  command: "php artisan key:generate"
+  args:
+        chdir: /var/www/snipeit
+  async: 3600
+  poll: 0

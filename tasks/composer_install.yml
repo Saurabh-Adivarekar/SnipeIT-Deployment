@@ -1,0 +1,7 @@
+---
+- name: Install Composer dependencies for Snipe-IT
+  command: "composer install --no-dev --prefer-source"
+  args:
+        chdir: /var/www/snipeit
+  async: 3600
+  poll: 0
